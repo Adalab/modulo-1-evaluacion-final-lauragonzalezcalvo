@@ -13,86 +13,15 @@
 </head>
 
 <body>
-  <header class="header">
-    <img class="icon-menu" src="./assets/images/ico-menu.svg" alt="Icono del menu">
-  </header>
+<include src="./partials/header.html"></include>
   <main>
-
-    <section class="hero">
-        <h1 class="hero__title">Anonymous proxy</h1>
-        <p>In hac habitasse platea dictumst</p>
-        <button class="hero__arrowdown">
-          <a href="./index.html#" class="hero__arrowdown--enlace"> <img src="./assets/images/ico-scroll-down.svg" alt="flecha hacia abajo">
-          </a>
-        </button> <!-- hay que enlazarlo con la section3 -->
-    </section>
-
-    <section class="sectionwindow">
-      <article class="sectionwindow__block">
-        <small class="sectionwindow__tips">Insomnia tips</small>
-        <h2 class="sectionwindow__title">Looking Through A Window</h2>
-        <p class="sectionwindow__paragraph">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-        <a href="#" class="sectionwindow__gobottom">Go</a>
-      </article>
-    </section>
-
-    <section class="sectionreasons">
-     <h2 class="sectionreasons__title">3 Reasons To Purchase</h2>
-
-      <article class="sectionreasons__block">
-        <h3 class="sectionreasons__h3">Ut sed metus</h3>
-        <p class="sectionreasons__descp">Lorem ipsum dolor sit amet, consecteur.</p>
-      </article>
-
-      <article class="sectionreasons__block">
-        <h3 class="sectionreasons__h3">Curabitur ac erat</h3>
-        <p class="sectionreasons__descp">Mauris mattis urna quis lorem molestie.</p>
-      </article>
-
-      <article class="sectionreasons__block">
-        <h3 class="sectionreasons__h3">Morbi dictum</h3>
-        <p class="sectionreasons__descp">Aliquam in dolor et dolor tincidunt.</p>
-      </article>
-      <div class="sectionreasons">
-        <a href="#" class="sectionreasons__bottom">More reasons</a>
-        </div>
-    </section>
-
-    
-
+    <include src="./partials/section-hero.html"></include>
+    <include src="./partials/section-window.html"></include>
+    <include src="./partials/section-reasons.html"></include>
   </main>
   <footer class="footer">
+    <include src="./partials/footer.html"></include>
 
-    <button>
-      <a href="./index.html#" class="footer__bottom"> <img src="./assets/images/ico-arrow.svg" alt="flecha hacia arriba">
-        <!-- hay que enlazarlo con el inicio de la página -->
-      </a>
-    </button>
-
-    <nav>
-      <ul>
-        <li class="footer-menu-items">Articles</li>
-        <li class="footer-menu-items">Books</li>
-        <li class="footer-menu-items">Events</li>
-        <li class="footer-menu-items">Reasons</li>
-        <li class="footer-menu-items">Tips</li>
-      </ul>
-    </nav>
-    <div class="social-menu">
-      <ul class="social-menu-item">
-        <li class="social-menu-items">Twitter</li>
-        <li class="social-menu-items">Instagram</li>
-        <li class="social-menu-items">Mastodon.social</li>
-      </ul>
-    </div>
-
-    <div class="copy">
-      <span class="copy-year">&copy; 2020 </span>
-      <span class="copy-we">we
-        <img class="copy-icon-heart" src="./assets/images/" alt="icono de un corazón"></span>
-        <span class="copy-components">components</span>
-        <!-- falta poner icono corazon -->
-    </div>
   </footer>
 
 </body>
