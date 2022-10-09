@@ -1,0 +1,23 @@
+.hero{
+    background-image: url(../images/cover.jpeg) ;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    // hacer que la imagen quede centrada 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: $color-white;
+        &__title {
+            font-size: 42px;
+            font-family: $font-family-main;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+}
+
+// falta font family, de todos, padding, redondear flecha y el responsive
+
