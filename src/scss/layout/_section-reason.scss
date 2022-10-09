@@ -1,7 +1,12 @@
 .sectionreasons {
     background-color:$color-lightblue;
     display: grid;
-    grid-gap: 20px;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1 / 4;
+  // grid-template-rows: 40px 200px 40px;
+    grid-gap: 45px;
+
       &__title{
         font-family:$font-family-main;// cuidado con esta fuente no la está cogiendo debe ser. robotoslab
         font-weight: bold;
@@ -11,6 +16,8 @@
 
 .sectionreasons__block{
   background-color: aquamarine;
+  width: 180px;
+  height: 83px;
       &--h3{
         font-family:$font-family-main;// cuidado con esta fuente no la está cogiendo debe ser. robotoslab
         font-weight: bold;
@@ -18,19 +25,42 @@
           &--descp{
             font-family: $font-family-main;
             font-size: 18px;
-            font-weight: 800;// no hay que font-weight?? hay que buscar su fuente;
+            font-weight: 500;// no hay que font-weight?? hay que buscar su fuente;
             
     }
   }
 }
 .reasonsbottom  {
-  background-color:$color-orange;
-  text-decoration: none;
-  &__link{
-    background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 41px;
+  padding-bottom: 60px;
+  background-color:$color-lightblue ;
+      &__container{
+        background-color:$color-orange;
+        width: 184px;
+        height: 45px;// probar con rem 
+        
+         &--link{
+            background-color: aqua;
+            text-decoration: none;
+    }
   }
-
 }
+
+
+
+
 // En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transform que
 // dejamos a vuestra elección (BONUS-> hacer la transform con transition, investigar la propiedad
 // transition)
+
+
+// media queries
+.reasonsbottom__container{
+    @media all and (min-width: 1200px) {
+      width: 255px;
+      height: 45px;
+ }
+}

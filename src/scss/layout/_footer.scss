@@ -1,8 +1,65 @@
-// .page__footer {
-//   position: fixed;
-//   left: 0;
-//   bottom: 0;
-//   width: 100vw;
-//   padding: 1rem;
-//   color: $color-secondary;
+.footer{
+    background-color: $color-black;
+    color: $color-white;
+}
+.footer-menu-enlace{
+    text-decoration: none;
+}
+.footer-menu-items{
+    color: $color-white;
+}
+
+
+.sectionfooter{
+    text-align: center;
+    line-height: 1.88;
+    font-family:$font-family-main ;
+}
+
+.footer-menu{
+    padding: 65px 120px 30px 120px ;
+    text-transform: uppercase;
+}
+.social-menu{
+    padding: 0px 87px 32px 87px ;
+    text-transform: uppercase;
+}
+.copy{
+    font-size: 14px;
+    padding-bottom: 36px;
+}
+// media queries
+.sectionfooter {
+    @media all and (min-width: 768px) {
+        
+    
+    }
+
+
+//  puedo utilizar position cuando ya no pueda utilizar mas flex?
+
+// .sectionfooter {
+//     @media all and (min-width: 768px) {
+//         display: flex;
+//         justify-content: space-around;
+//         background-color: rgb(97, 84, 68);
+//         width: 450px;
+//         margin-left: 300px;
+    
+//     }
+
+// }
+// .footer-menu, .social-menu {
+//     @media all and (min-width: 768px) {
+//         padding: 0px;
+        
+//     }
+
+// }
+// .copy{
+//     @media all and (min-width: 768px) {
+//         position: relative;
+//         bottom: 80px;
+        
+//     }
 // }
