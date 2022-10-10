@@ -8,8 +8,7 @@
 .arrow{
     display: flex;
     justify-content: center;
-    
-
+    transform: translateY(-50%);
 }
 
 .footer__containerbottom{
@@ -18,6 +17,7 @@
     width: 45px;
     height: 45px;
     border: none;
+    
 
 }
 .footer-menu-enlace{

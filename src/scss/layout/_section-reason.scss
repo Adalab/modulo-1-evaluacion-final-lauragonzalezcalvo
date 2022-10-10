@@ -1,39 +1,67 @@
 .sectionreasons {
     background-color:$color-lightblue;
     display: grid;
-    grid-template-rows: 96px 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-gap: 44px;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:44px;
     
       &__title{
         font-family:$font-family-title;
         font-weight: bold;
         font-size: 24px;
-        grid-column: 1 / 4;
-
-     
+        grid-column: 1/4;
+        text-align: center;
+        // padding-top: 30px;
+        
   }
 }
 
 .sectionreasons__block{
-  background-color: aquamarine;
-  width: 180px;
-  height: 83px;
-  grid-column: 2/ 3;
-
-
-  
+ 
       &--h3{
         font-family:$font-family-title;
         font-size: 18px;
+        background-color: aqua;
           &--descp{
             font-family: $font-family-main;
             font-size: 18px;
             font-weight: 500;// no hay que font-weight?? hay que buscar su fuente;
+           
             
     }
   }
 }
+
+
+.sectionreasons__blockbox1{
+  background-color: bisque;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 180px;
+  height: 100px;
+
+}
+.sectionreasons__blockbox2{
+  background-color: rgb(46, 188, 188);
+  grid-row: 3/4;
+  grid-column: 2/3;
+  width: 180px;
+  height: 100px;
+
+}
+.sectionreasons__blockbox3{
+  background-color: rgb(3, 95, 95);
+  grid-row: 4/5;
+  grid-column: 2/3;
+  width: 180px;
+  height: 100px;
+
+}
+
+
+
+
+
 .reasonsbottom  {
   display: flex;
   flex-direction: column;
@@ -95,8 +123,7 @@
 }
 .sectionreasons__block{
   @media all and (min-width: 768px) {
-  grid-column:1/4 ;
-  grid-row: 2/4;
+ 
     
 
   }
