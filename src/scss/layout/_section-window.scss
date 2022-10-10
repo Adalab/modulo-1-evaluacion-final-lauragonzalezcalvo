@@ -3,20 +3,127 @@
     padding: 60px 15px 45px 15px;
     display: flex;
     justify-content: center;
+
    
     &__block{
-        background-color: rgb(123, 210, 210);
         width: 600px;
         
     }
 }
-
-.sectionwindow__gobottom:hover{
-    background-color: gold;
-    transform: translate(-100px, 100px);
-    // hay que poner transform,este es una prueba
+.sectionwindow__tips{
+    font-size: 14px;
+    font-family: $font-family-main;
+    color: $color-blue;
+    text-transform: capitalize;
+    background-color: black;
+    height: 30px;
 }
 
-// solo he hecho pruebas, para ver el responsive. toca :En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transform que
+.sectionwindow__title{
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-family: $font-family-title;
+
+}
+.sectionwindow__paragraph{
+    font-family: $font-family-main;
+    font-size: 18px;
+    padding-bottom: 27px;
+}
+.sectionwindow__gobottom{
+    text-decoration: none;
+    font-size: 20px;
+    color: $color-orange;
+    font-weight: bold;
+    font-family: $font-family-main;
+    
+}
+.sectionwindow__divbottom{
+    color: $color-orange;
+    border: solid 2px $color-orange;
+    border-radius: 26px ;
+    width: 76px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 5px;
+    // añadirle padding zona clicable
+}
+
+.sectionwindow__divbottom:hover {
+    transform: scale(1.2);
+
+    // seguir probando transform
+}
+
+
+
+
+
+
+
+// toca :En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transform que
 // dejamos a vuestra elección (BONUS-> hacer la transform con transition, investigar la propiedad
 // transition)
+
+// media queries
+.sectionwindow__tips{
+    @media all and (min-width: 768px) {
+    
+        }
+    @media all and (min-width: 1200px) {
+    font-size: 16px;
+    }
+
+}
+.sectionwindow__title{
+    font-size: 24px;
+    padding-bottom: 20px;
+
+    @media all and (min-width: 768px) {
+        font-size: 26px;
+        padding-bottom: 27px;
+    }
+    @media all and (min-width: 1200px) {
+    font-size: 32px;
+    padding-bottom: 32px;
+    }
+}
+.sectionwindow__paragraph{
+    @media all and (min-width: 768px) {
+        font-size: 20px;
+        
+    }
+    @media all and (min-width: 1200px) {
+    
+}
+}
+
+.sectionwindow__block{
+    @media all and (min-width: 768px) {
+    
+    }
+    @media all and (min-width: 1200px) {
+    width: 730px;
+  
+    }
+}
+.sectionwindow{
+    @media all and (min-width: 1200px) {
+
+        // padding-right: 275px;
+        // padding-left: 275px;
+ }
+}
+
+.sectionwindow__divbottom{
+    @media all and (min-width: 768px) {
+        width: 91px;
+        height: 45px;
+    }
+    @media all and (min-width: 1200px) {
+        width: 160px;
+        height: 45px;
+  
+    }
+}

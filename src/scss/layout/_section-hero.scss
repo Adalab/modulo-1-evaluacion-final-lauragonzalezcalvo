@@ -1,8 +1,9 @@
 .hero{
     background-image: url(../images/cover.jpeg) ;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat ;
+    background-size:cover;
+    background-repeat: no-repeat;
+
     // hacer que la imagen quede centrada 
     display: flex;
     flex-direction: column;
@@ -18,18 +19,76 @@
             
         }
 }
+.hero__parragraph{
+    font-family:$font-family-main;
+    padding-top:15px;
+    padding-bottom: 20px;
 
+
+
+}
 // falta font family, de todos, padding,y el responsive
 
 .hero__arrowdown{
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
+    background-color: $color-white;
     border: 0px;
-}
-.hero__arrowdown{
-    padding: 10px 5px;
+    padding: 15px 5px;
+    width: 38px;
+    height: 38px;
+    margin-bottom: 34.1px;
+    
 }
 
+// aumentar tamaño clicable
+.hero__arorrow--image{
+    
+}
+
+
 // intentar anidar
+
+// media queries
+
+.hero__title{
+
+
+@media all and (min-width: 768px) {
+    font-size: 80px;
+      
+    }
+
+@media all and (min-width: 1200px) {
+    font-size: 100px;
+    width: 11ch;
+      
+    }
+}
+
+
+.hero__parragraph{
+    @media all and (min-width: 768px) {
+        font-size:24px;
+        width: 25ch;
+        text-align: center;
+        padding-bottom: 7px;
+        
+
+
+        }
+    @media all and (min-width: 1200px) {
+    width: 40ch;
+    padding-bottom: 34px;
+    }
+}
+.hero__arrowdown{
+    @media all and (min-width: 768px) {
+        width: 45px;
+        height: 45px;
+        line-height: 22px;
+        margin-bottom: 13px;
+      
+
+
+        }
+}

@@ -6,7 +6,7 @@
     grid-gap: 44px;
     
       &__title{
-        font-family:$font-family-main;// cuidado con esta fuente no la está cogiendo debe ser. robotoslab
+        font-family:$font-family-title;
         font-weight: bold;
         font-size: 24px;
         grid-column: 1 / 4;
@@ -24,8 +24,7 @@
 
   
       &--h3{
-        font-family:$font-family-main;// cuidado con esta fuente no la está cogiendo debe ser. robotoslab
-        font-weight: bold;
+        font-family:$font-family-title;
         font-size: 18px;
           &--descp{
             font-family: $font-family-main;
@@ -46,12 +45,25 @@
         background-color:$color-orange;
         width: 184px;
         height: 45px;// probar con rem 
+        color: $color-orange;
+        border: solid 2px $color-orange;
+        border-radius: 26px ;
+        line-height: 45px;
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
         
          &--link{
-            background-color: aqua;
+            color: $color-white;
             text-decoration: none;
+            font-family: $font-family-main;
     }
   }
+}
+.reasonsbottom__container:hover {
+  transform: scale(1.2);
+
+  // seguir probando transform y el bonus
 }
 
 
@@ -64,6 +76,11 @@
 
 // media queries
 .reasonsbottom__container{
+  @media all and (min-width: 1200px) {
+    width: 210px;
+    height: 45px;
+}
+
     @media all and (min-width: 1200px) {
       width: 255px;
       height: 45px;
