@@ -11,7 +11,7 @@
     color: $color-white;
         &__title {
             font-size: 42px;
-            font-family: $font-family-main;
+            font-family:$font-family-title;
             font-weight: bold;
             text-transform: uppercase;
             text-align: center;
@@ -19,5 +19,17 @@
         }
 }
 
-// falta font family, de todos, padding, redondear flecha y el responsive
+// falta font family, de todos, padding,y el responsive
 
+.hero__arrowdown{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+    border: 0px;
+}
+.hero__arrowdown{
+    padding: 10px 5px;
+}
+
+// intentar anidar

@@ -29,14 +29,58 @@
     padding-bottom: 36px;
 }
 // media queries
-.sectionfooter {
+
+.sectionfooter{
     @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: center;
+        text-align:left;
         
-    
+        
+ }
+    @media all and (min-width: 1200px) {
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(51, 74, 74);
+      
+        
     }
+}
+
+
+
+.footermenuandsocial{
+    @media all and (min-width: 768px) {
+       display: flex;
+       align-items: baseline;
+       justify-content: space-around;
+       width: 400px;
+       
+    
+ }
+}
+.footer-menu,
+.social-menu{
+    @media all and (min-width: 768px) {
+        padding: 0px;
+        
+
+  }
+}
+
+.footer-menuitem{
+    @media all and (min-width: 768px) {
+        text-align: none;
+
+  }
+}
+
+
 
 
 //  puedo utilizar position cuando ya no pueda utilizar mas flex?
+// si lo utilizo tendré que meter menu social y menu footer en una seccion y dejar fuera copy
 
 // .sectionfooter {
 //     @media all and (min-width: 768px) {
