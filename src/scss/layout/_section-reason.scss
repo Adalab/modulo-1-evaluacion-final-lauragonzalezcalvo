@@ -72,11 +72,10 @@
       &__container{
         background-color:$color-orange;
         width: 184px;
-        height: 45px;// probar con rem 
         color: $color-orange;
         border: solid 2px $color-orange;
         border-radius: 26px ;
-        line-height: 45px;
+        line-height: 30px;
         text-align: center;
         padding: 5px;
         font-size: 20px;
@@ -85,11 +84,13 @@
             color: $color-white;
             text-decoration: none;
             font-family: $font-family-main;
+            padding: 20px;
     }
   }
 }
 .reasonsbottom__container:hover {
   transform: scale(1.2);
+  transition: all 500ms;
 
   // seguir probando transform y el bonus
 }

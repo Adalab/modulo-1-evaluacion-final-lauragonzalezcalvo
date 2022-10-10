@@ -46,6 +46,9 @@
     font-size: 14px;
     padding-bottom: 70px;
 }
+.heartcolor{
+    color: $color-orange;
+}
 // media queries
 
 .sectionfooter{
@@ -55,7 +58,7 @@
         justify-content: center;
         text-align:left;
         padding-bottom: 30px;
-        width: 700px;
+        padding-left: 30px;
         
         
  }
@@ -76,10 +79,13 @@
        display: flex;
        align-items: baseline;
        justify-content: space-around;
-       width: 400px;
-       
-    
+       width: 524px;  
  }
+ @media all and (min-width: 768px) {
+    width: 371px;
+    
+ 
+}
 }
 .footer-menu,
 .social-menu{
@@ -96,6 +102,11 @@
 
   }
 }
+.copy{
+    @media all and (min-width: 768px) {
+        padding-bottom: 82px;
 
+  }
+}
 
 
