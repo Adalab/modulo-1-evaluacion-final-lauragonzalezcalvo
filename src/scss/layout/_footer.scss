@@ -23,7 +23,7 @@
     animation: wiggle 3s linear ;
     
 }
-/* Keyframes */
+// ANIMATE
 @keyframes wiggle {
     0%, 30% {
       transform: rotateZ(-360deg);
@@ -31,17 +31,14 @@
     }
     50% {
         background-color:$color-black;
-      }
-    
-  }
+    }
+}
 .footer-menu-enlace{
     text-decoration: none;
 }
 .footer-menu-items{
     color: $color-white;
 }
-
-
 .sectionfooter{
     text-align: center;
     line-height: 1.88;
@@ -72,10 +69,8 @@
         justify-content: center;
         text-align:left;
         padding-bottom: 30px;
-        padding-left: 30px;
-        
-        
- }
+        padding-left: 30px;     
+    }
     @media all and (min-width: 1200px) {
       align-items: center;
       justify-content: center;
@@ -85,42 +80,33 @@
         
     }
 }
-
-
-
 .footermenuandsocial{
     @media all and (min-width: 768px) {
        display: flex;
        align-items: baseline;
        justify-content: space-around;
        width: 524px;  
- }
+    }
  @media all and (min-width: 1200px) {
     width: 371px;
-    
- 
-}
+    }
 }
 .footer-menu,
 .social-menu{
     @media all and (min-width: 768px) {
         padding: 0px;
-        
-
   }
 }
 
 .footer-menuitem{
     @media all and (min-width: 768px) {
         text-align: none;
-
   }
 }
 .copy{
     @media all and (min-width: 768px) {
         padding-bottom: 82px;
         padding-right: 50px;
-
   }
 }
 

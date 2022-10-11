@@ -10,24 +10,19 @@
     align-items: center;
     color: $color-white;
         &__title {
-            font-size: 42px;
-            font-family:$font-family-title;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-            
+        font-size: 42px;
+        font-family:$font-family-title;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 50px;
         }
 }
 .hero__parragraph{
     font-family:$font-family-main;
     padding-top:15px;
     padding-bottom: 20px;
-
-
-
 }
-// falta font family, de todos, padding,y el responsive
-
 .hero__arrowdown{
     border-radius: 50%;
     background-color: $color-white;
@@ -36,31 +31,19 @@
     width: 38px;
     height: 38px;
     margin-bottom: 34.1px;
-    
 }
-
-// aumentar tamaño clicable
-.hero__arorrow--image{
-    
-}
-
-
-// intentar anidar
-
 // media queries
 
 .hero__title{
-
-
 @media all and (min-width: 768px) {
-    font-size: 80px;
-      
+        font-size: 80px;
+        line-height: 90px;
     }
 
 @media all and (min-width: 1200px) {
-    font-size: 100px;
-    width: 12ch;
-      
+        font-size: 100px;
+        width: 12ch;
+        line-height: 120px;
     }
 }
 
@@ -71,13 +54,10 @@
         width: 25ch;
         text-align: center;
         padding-bottom: 7px;
-        
-
-
-        }
+    }
     @media all and (min-width: 1200px) {
-    width: 40ch;
-    padding-bottom: 34px;
+        width: 40ch;
+        padding-bottom: 34px;
     }
 }
 .hero__arrowdown{
@@ -85,9 +65,10 @@
         width: 45px;
         height: 45px;
         line-height: 22px;
-        margin-bottom: 13px;
-      
-
-
+        margin-bottom: 30px;
         }
+    @media all and (min-width: 1200px) {
+        margin-bottom: 15px;
+
+    }
 }
