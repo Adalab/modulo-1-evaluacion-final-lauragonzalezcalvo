@@ -36,16 +36,16 @@
     color: $color-orange;
     font-weight: bold;
     font-family: $font-family-main;
-    padding: 20px;
+    padding: 10px 25px 10px 20px;
     
 }
 .sectionwindow__divbottom{
     color: $color-orange;
     border: solid 2px $color-orange;
     border-radius: 26px ;
-    width: 76px;
-    height: 45px;
-    line-height: 45px;
+    width: 65px;
+    height:35px;
+    line-height: 35px;
     text-align: center;
     padding: 5px;
 }
@@ -100,22 +100,13 @@
   
     }
 }
-.sectionwindow{
-    @media all and (min-width: 1200px) {
-
-        // padding-right: 275px;
-        // padding-left: 275px;
- }
-}
 
 .sectionwindow__divbottom{
     @media all and (min-width: 768px) {
         width: 91px;
-        height: 45px;
     }
     @media all and (min-width: 1200px) {
         width: 160px;
-        height: 45px;
   
     }
 }

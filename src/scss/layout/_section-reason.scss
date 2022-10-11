@@ -84,7 +84,7 @@
             color: $color-white;
             text-decoration: none;
             font-family: $font-family-main;
-            padding: 20px;
+            padding: 10px 25px 10px 25px;
     }
   }
 }
@@ -92,15 +92,8 @@
   transform: scale(1.2);
   transition: all 500ms;
 
-  // seguir probando transform y el bonus
+  
 }
-
-
-
-
-// En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transform que
-// dejamos a vuestra elección (BONUS-> hacer la transform con transition, investigar la propiedad
-// transition)
 
 
 // media queries
@@ -188,4 +181,15 @@
     font-size: 20px;
 
      }
+}
+
+.reasonsbottom__container{
+  @media all and (min-width: 768px) {
+    width:210px;
+
+  }
+  @media all and (min-width: 1200px) {
+    width:255px;
+
+  }
 }
